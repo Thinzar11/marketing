@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .obj{
+            width: 300px;
+            background-color: gray;
+            height: 200px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+  
+  <button class="animate">Animate</button>
+  <button class="stop">Stop</button>
+  <br>
+  <div class="obj"></div>
+  <br>
+  <button class="chain">Chain</button><br><br>
+  <div class="obj1">Thinzar Nwe</div>
+ <script src="./JS/jquery.min.js"></script>   
+ <script>
+$(".animate").click(function(){
+    $(".obj").animate({
+        left:"+=100px",
+        top:"+=200px",
+        opacity:"0.5"
+    },1000,function(){
+    $(".obj").animate({left:"0",right:"0"})
+})
+})
+
+$(".stop").click(function(){
+    $(".obj").stop();
+})
+
+$(".chain").click(function(){
+    $(".obj1").css("color","red").hide(2000).show(1000);
+})
+ </script>
+</body>
+</html>
