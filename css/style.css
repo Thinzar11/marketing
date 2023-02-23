@@ -38,11 +38,11 @@ html{
     }
 }
 
-.nav-item .aa{
+/* .nav-item .aa{
     border: 2px solid white !important;
     border-radius: 10em;
     padding: 0.5rem 1.3rem !important;
-}
+} */
 
 .nav-site-scroll .nav-link{
     color: #1a129f !important;
@@ -51,11 +51,11 @@ html{
     padding: 0.5rem 1.3rem !important;
 }
 
-.nav-site-scroll .aa{
-    border: 2px solid #1a129f !important;
+/* .nav-site-scroll .aa{ */
+    /* border: 2px solid #1a129f !important;
     border-radius: 10em;
-    padding: 0.5rem 1.3rem !important;
-}
+    padding: 0.5rem 1.3rem !important; */
+/* } */
 
 .navbar-toggler:focus{
   box-shadow: none !important;

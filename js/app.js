@@ -14,22 +14,8 @@ $(document).ready(function(){
         }
     });
 
-    // $(".navbar-toggler").click(function() {
-        
-       
-    //     let result = ($(".navbar-collapse").hasClass("show"))
-    //     console.log(result);
-
-    //     if(result){
-    //         $(".navbar-toggler").html(`<i class="fa fa-bars fa-2x menu-icon"></i>`);
-    //       }else{
-    //         $(".navbar-toggler").html(`<i class="fa fa-close fa-2x menu-icon"></i>`);
-    //       }
-    //   });
-
    
     var waypoints = $('#home').waypoint(function(direction) {
-        console.log("I am home.")
         $(".nav-link").removeClass("aa");
         $(".nav-link[href = '#home']").addClass("aa");
       }, {
@@ -37,7 +23,6 @@ $(document).ready(function(){
       })
 
       var waypoints = $('#about').waypoint(function(direction) {
-        console.log("I am about.")
         $(".nav-link").removeClass("aa");
         $(".nav-link[href = '#about']").addClass("aa");
       }, {
@@ -45,7 +30,6 @@ $(document).ready(function(){
       })
 
       var waypoints = $('#services').waypoint(function(direction) {
-        console.log("I am services.")
         $(".nav-link").removeClass("aa");
         $(".nav-link[href = '#services']").addClass("aa");
       }, {
@@ -53,7 +37,6 @@ $(document).ready(function(){
       })
 
       var waypoints = $('#pricing').waypoint(function(direction) {
-        console.log("I am pricing.")
         $(".nav-link").removeClass("aa");
         $(".nav-link[href = '#pricing']").addClass("aa");
       }, {
@@ -61,7 +44,6 @@ $(document).ready(function(){
       })
 
       var waypoints = $('#contactus').waypoint(function(direction) {
-        console.log("I am contactus.")
         $(".nav-link").removeClass("aa");
         $(".nav-link[href = '#contactus']").addClass("aa");
       }, {
@@ -69,41 +51,6 @@ $(document).ready(function(){
       })
       
 });
-
-// function setActive(current) {
-
-//   $(".nav-link").removeClass("aa");
-
-//   $(`.nav-link[href='#${current}']`).addClass('aa');
-
-// }
-
-// function navScroll() {
-
-//   let currentSection = $("section[id]");
-//   currentSection.waypoint(function (direction) {
-
-//       if(direction == "down"){
-//           let currentSectionId = $(this.element).attr('id');
-//           console.log(currentSectionId);
-//           setActive(currentSectionId);
-//       }
-
-//   },{ offset:'150px' });
-
-//   currentSection.waypoint(function (direction) {
-
-//       if(direction == "up"){
-//           let currentSectionId = $(this.element).attr('id');
-//           console.log(currentSectionId);
-//           setActive(currentSectionId);
-//       }
-
-//   },{ offset:'150px' });
-
-// }
-
-// navScroll();
 
 new WOW().init();
 $('.pricing-slick').slick({
